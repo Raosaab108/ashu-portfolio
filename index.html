@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashu | BTech Student Portfolio</title>
+  <meta name="description" content="Portfolio of Ashu, a BTech student building web projects, exploring AI and learning in public." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">ashu<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="btn btn-small">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="eyebrow reveal">BTech Student · Developer · Curious Builder</p>
+      <h1 class="reveal">Hi, I'm <span class="gradient-text">Ashu</span>.<br />I turn ideas into interactive things.</h1>
+      <p class="lead reveal">I'm an engineering student who loves building clean, fast and playful web experiences, and learning something new with every project.</p>
+      <div class="cta reveal">
+        <a href="#projects" class="btn">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Let's talk</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-img reveal-left">
+        <img src="https://picsum.photos/id/1005/700/800" alt="Portrait placeholder" loading="lazy" />
+        <div class="img-glow"></div>
+      </div>
+      <div class="reveal-right">
+        <h2 class="section-title">About <span class="gradient-text">me</span></h2>
+        <p>I'm a BTech student passionate about software, design and problem solving. I enjoy turning rough ideas into polished products, from small utilities to full web apps.</p>
+        <p>When I'm not in class or coding, I'm exploring new frameworks, contributing to side projects and picking up skills that make me a better engineer.</p>
+        <div class="stats">
+          <div class="stat"><strong data-count="12">0</strong><span>Projects built</span></div>
+          <div class="stat"><strong data-count="8">0</strong><span>Technologies</span></div>
+          <div class="stat"><strong data-count="3">0</strong><span>Hackathons</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="gradient-text">skills</span></h2>
+      <div class="skills">
+        <div class="skill reveal"><div class="skill-head"><span>HTML &amp; CSS</span><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>JavaScript</span><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Python</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Data Structures &amp; Algorithms</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Git &amp; GitHub</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Three.js &amp; Creative Coding</span><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+      </div>
+      <div class="chips reveal">
+        <span>React</span><span>Node.js</span><span>Java</span><span>C++</span><span>SQL</span><span>Figma</span><span>Linux</span><span>REST APIs</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Featured <span class="gradient-text">projects</span></h2>
+      <div class="cards">
+        <article class="card reveal tilt">
+          <img src="https://picsum.photos/id/180/600/400" alt="Project one" loading="lazy" />
+          <div class="card-body">
+            <h3>Campus Connect</h3>
+            <p>A web app that helps students find study groups, share notes and track events across campus.</p>
+            <div class="tags"><span>JavaScript</span><span>Node.js</span><span>MongoDB</span></div>
+          </div>
+        </article>
+        <article class="card reveal tilt">
+          <img src="https://picsum.photos/id/119/600/400" alt="Project two" loading="lazy" />
+          <div class="card-body">
+            <h3>Smart Expense Tracker</h3>
+            <p>Tracks spending with charts, category insights and monthly budget alerts in a clean dashboard.</p>
+            <div class="tags"><span>React</span><span>Chart.js</span><span>CSS</span></div>
+          </div>
+        </article>
+        <article class="card reveal tilt">
+          <img src="https://picsum.photos/id/96/600/400" alt="Project three" loading="lazy" />
+          <div class="card-body">
+            <h3>AI Study Buddy</h3>
+            <p>A Python-powered assistant that summarises lecture notes and generates quick practice questions.</p>
+            <div class="tags"><span>Python</span><span>NLP</span><span>Flask</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="journey">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="gradient-text">journey</span></h2>
+      <div class="timeline">
+        <div class="t-item reveal"><span class="dot"></span><h4>BTech in Computer Science</h4><small>2023 – Present</small><p>Studying core CS subjects while building projects alongside coursework.</p></div>
+        <div class="t-item reveal"><span class="dot"></span><h4>Hackathons &amp; Competitions</h4><small>2024</small><p>Collaborated with teams to ship working prototypes under tight deadlines.</p></div>
+        <div class="t-item reveal"><span class="dot"></span><h4>Open Source &amp; Side Projects</h4><small>2025</small><p>Contributed to community projects and built tools to learn in public.</p></div>
+        <div class="t-item reveal"><span class="dot"></span><h4>Looking for Internships</h4><small>Now</small><p>Eager to join a team, learn from mentors and build things that matter.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-sec">
+    <div class="container">
+      <h2 class="section-title reveal">Moments &amp; <span class="gradient-text">inspiration</span></h2>
+      <div class="gallery">
+        <img class="reveal" src="https://picsum.photos/id/1015/500/500" alt="Gallery 1" loading="lazy" />
+        <img class="reveal" src="https://picsum.photos/id/1039/500/500" alt="Gallery 2" loading="lazy" />
+        <img class="reveal" src="https://picsum.photos/id/1043/500/500" alt="Gallery 3" loading="lazy" />
+        <img class="reveal" src="https://picsum.photos/id/1067/500/500" alt="Gallery 4" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container narrow">
+      <h2 class="section-title reveal">Let's <span class="gradient-text">build something</span></h2>
+      <p class="reveal center">Have an idea, an internship or just want to say hi? My inbox is open.</p>
+      <form class="form reveal" id="form">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <textarea rows="4" placeholder="Your message" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ashu · Built with HTML, CSS, JS &amp; Three.js</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
